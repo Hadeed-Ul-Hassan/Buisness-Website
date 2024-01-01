@@ -1,0 +1,59 @@
+/****** MEDIA QUERY *******/
+/****** MEDIA QUERY *******/
+/****** MEDIA QUERY *******/
+
+/* DEVICES BELOW 600px */
+
+@media  screen and (max-width: 600px) {
+    .nav-ul{
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    margin-top: 1rem;
+    }
+    .nav-ul li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255, 0.4)
+    }
+    .nav-ul li:last-child {
+
+        border-bottom: 1px solid rgba(255,255,255, 0.4)
+    }
+    .nav-link::before,
+    .current::before{
+        display: none;
+    }
+    .search{
+        display: none;
+
+    }
+    .hamburger{
+display: block;
+    }
+    .nav-ul .close{
+        display: block;
+        margin-top: 1rem;
+        color: var(--pink);
+    }
+    .show{
+        display: flex;
+    }
+    .hide{
+        display: none;
+    }
+
+    .text-intro{
+        width: 100%;
+    }
+    .text-intro h1{
+        font-size: 6rem;
+    }
+    .contact{
+        flex-direction: column;
+
+    }
+    .contact > *{
+        margin: 3rem 0;
+    }
+}
